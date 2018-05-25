@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: virgo-manage
+  profiles:
+    active: dev
+  cloud:
+    config:
+      #uri: http://127.0.0.1:8877
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: VIRGO-CONFIG
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.108.94:8887/eureka/,http://192.168.108.94:8888/eureka/,http://192.168.108.94:8889/eureka/
