@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RefreshScope
+@RequestMapping("/manage")
 public class DefaultController {
 
     @Value("${myprofile.username}")
